@@ -1,0 +1,5 @@
+help_url: "http://www.railstutorial.org/help"
+home_url: "http://www.railstutorial.org/"
+VALID_EMAIL_REGEX: '\A[^@\s]+@([^@\s]+\.)+[^@\s]+\z'
+name_max_length: 50
+email_max_length: 255
