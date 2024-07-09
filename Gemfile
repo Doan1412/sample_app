@@ -12,6 +12,9 @@ gem "stimulus-rails"
 gem "jbuilder"
 gem "tzinfo-data", platforms: %i(mingw mswin x64_mingw jruby)
 gem "bootsnap", require: false
+gem "bootstrap-sass", "3.4.1"
+gem "rails-i18n"
+gem "config"
 group :development, :test do
   gem "debug", platforms: %i(mri mingw x64_mingw)
   gem "rubocop", "~> 1.26", require: false

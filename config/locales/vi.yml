@@ -1,0 +1,15 @@
+
+vi:
+  app_name: "sample_app"
+  help:
+    title: "Trợ giúp"
+    content: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại"
+    content_2: "trang trợ giúp Hướng dẫn Rails"
+  home:
+    title: "Trang chủ"
+    content: "Chào mừng đến với Sample_app! Đây là trang chủ của"
+    content_2: "Hướng dẫn Ruby on Rails"
+  navbar:
+    home: "Trang chủ"
+    help: "Trợ giúp"
+    login: "Đăng nhập"
