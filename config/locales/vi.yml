@@ -34,6 +34,7 @@ vi:
     new_user?: "Người dùng mới ?"
     sign_up_now: "Đăng ký ngay"
     invalid: "Email hoặc mật khẩu không đúng"
+    remember_me: "Nhớ tôi trên máy tính này"
   activerecord:
     models:
       user: "Người dùng"
