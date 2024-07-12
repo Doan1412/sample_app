@@ -43,12 +43,27 @@ en:
     home: "Home"
     help: "Help"
     login: "Log in"
+    profile: "Profile"
+    settings: "Settings"
+    account: "Account"
+    english: "English"
+    vietnamese: "Vietnamese"
+    logout: "Log out"
+    login: "Login"
+    users: "Users"
   sign_up: 
     title: "Sign Up"
     create_my_account: "Create My Account"
     welcome_msg: "Welcome to the Sample App"
     the_form_contains: "The form contains"
     error: "error"
+  login:
+    title: "Login"
+    email: "Email"
+    password: "Password"
+    new_user?: "New User ?"
+    sign_up_now: "Sign Up Now"
+    invalid: "Invalid email/password combination"
   activerecord:
     models:
       user: "User"

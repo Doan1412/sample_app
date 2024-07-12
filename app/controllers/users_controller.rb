@@ -1,8 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show]
-  def show
-    attr_reader :@user
-  end
+  def show; end
 
   def new
     @user = User.new
@@ -11,6 +9,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
+      log_in @user
       flash[:success] = t("welcome_msg")
       redirect_to @user
     else

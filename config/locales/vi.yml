@@ -12,6 +12,14 @@ vi:
     home: "Trang chủ"
     help: "Trợ giúp"
     login: "Đăng nhập"
+    profile: "Hồ sơ"
+    settings: "Cài đặt"
+    account: "Tài khoản"
+    english: "Tiếng Anh"
+    vietnamese: "Tiếng Việt"
+    logout: "Đăng xuất"
+    login: "Đăng nhập"
+    users: "Người dùng"
   sign_up: 
     title: "Đăng ký"
     create_my_account: "Tạo tài khoản của tôi"
@@ -19,6 +27,13 @@ vi:
     welcome_msg: "Chào mừng bạn đến với Sample_app"
     the_form_contains: "Biển mẫu bao gồm"
     error: "lỗi"
+  login:
+    title: "Đăng nhập"
+    email: "Email"
+    password: "Mật khẩu"
+    new_user?: "Người dùng mới ?"
+    sign_up_now: "Đăng ký ngay"
+    invalid: "Email hoặc mật khẩu không đúng"
   activerecord:
     models:
       user: "Người dùng"
