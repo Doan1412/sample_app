@@ -43,3 +43,18 @@ en:
     home: "Home"
     help: "Help"
     login: "Log in"
+  sign_up: 
+    title: "Sign Up"
+    create_my_account: "Create My Account"
+    welcome_msg: "Welcome to the Sample App"
+    the_form_contains: "The form contains"
+    error: "error"
+  activerecord:
+    models:
+      user: "User"
+      attributes:
+        user:
+          name: "Name"
+          email: "Email Address"
+          password: "Password"
+  

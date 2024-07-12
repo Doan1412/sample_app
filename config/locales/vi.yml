@@ -1,4 +1,3 @@
-
 vi:
   app_name: "sample_app"
   help:
@@ -13,3 +12,18 @@ vi:
     home: "Trang chủ"
     help: "Trợ giúp"
     login: "Đăng nhập"
+  sign_up: 
+    title: "Đăng ký"
+    create_my_account: "Tạo tài khoản của tôi"
+    confirmation: "Xác nhận lại mật khẩu"
+    welcome_msg: "Chào mừng bạn đến với Sample_app"
+    the_form_contains: "Biển mẫu bao gồm"
+    error: "lỗi"
+  activerecord:
+    models:
+      user: "Người dùng"
+    attributes:
+      user:
+        name: "Tên"
+        email: "Địa chỉ email"
+        password: "Mật Khẩu"
