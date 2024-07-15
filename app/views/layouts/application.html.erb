@@ -11,10 +11,6 @@
   </head>
 
   <body>
-    <header>
-      <%= link_to "English", locale: :en %>
-      <%= link_to "Vietnamese", locale: :vi %>
-    </header>
     <%= render "layouts/header" %>
     <div class="container">
       <% flash.each do |message_type, message| %>
