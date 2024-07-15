@@ -35,6 +35,17 @@ vi:
     sign_up_now: "Đăng ký ngay"
     invalid: "Email hoặc mật khẩu không đúng"
     remember_me: "Nhớ tôi trên máy tính này"
+  user:
+    edit:
+      title: "Sửa thông tin cá nhân"
+      confirmation: "Xác nhận lại mật khẩu"
+      change: "Thay đổi"
+      save: "Lưu thay đổi"
+    index: 
+      title: "Danh sách người dùng"
+    delete: 
+      title: "Xóa"
+      confirmation: "Bạn có chắc chắn muốn xóa user này không"
   activerecord:
     models:
       user: "Người dùng"

@@ -7,6 +7,9 @@ class User < ApplicationRecord
   validates :email, presence: true,
                     length: {maximum: Settings.email_max_length},
                     format: {with: mail_regex}
+  validates :password, presence: true,
+                    length: {minimum: Settings.min_password_length},
+                    allow_nil: true
 
   before_save :downcase_email
 

@@ -8,7 +8,7 @@
         <li><%= link_to t("navbar.home"), root_path %></li>
         <li><%= link_to t("navbar.help"), help_path %></li>
         <% if logged_in? %>
-          <li><%= link_to t("navbar.users"), "#" %></li>
+          <li><%= link_to t("navbar.users"), users_path %></li>
           <li class="dropdown">
             <%= link_to "#", id: "account", class: "dropdown-toggle", role: "button", data: { toggle: "dropdown" } do %>
               <%= t "navbar.account" %>
@@ -16,7 +16,7 @@
             <% end %>
             <ul id="dropdown-menu" class="dropdown-menu" aria-labelledby="account">
               <li><%= link_to t("navbar.profile"), current_user %></li>
-              <li><%= link_to t("navbar.settings"), "#" %></li>
+              <li><%= link_to t("navbar.settings"), edit_user_path(current_user) %></li>
               <li class="divider"></li>
               <li><%= link_to t("navbar.logout"), logout_path, data: { method: :delete } %></li>
             </ul>

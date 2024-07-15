@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
       reset_session
       log_in user
       params.dig(:session, :remember_me) == "1" ? remember(user) : forget(user)
-      redirect_to user, status: :see_other
+      redirect_back_or user
     else
       flash.now[:danger] = t "login.invalid"
       render :new, status: :unprocessable_entity
