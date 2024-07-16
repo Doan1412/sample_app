@@ -9,3 +9,4 @@ gravatar:
   size: 80
   list_size: 50
 mailer_from: "noreply@example.com"
+password_reset_expired: 2

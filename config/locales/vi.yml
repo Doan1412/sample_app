@@ -38,6 +38,21 @@ vi:
     invalid: "Email hoặc mật khẩu không đúng"
     remember_me: "Nhớ tôi trên máy tính này"
     unactivated: "Tài khoản chưa được kích hoạt. Kiểm tra email của bạn để lấy link kích hoạt."
+    forgot_pass: "Quên mật khẩu"
+  password_resets:
+    title: "Khôi phục mật khẩu"
+    expired_error: "Khôi phục mật khẩu đã hết hạn."
+    submit: "Xác nhận"
+    create:
+      noti: "Email được gửi kèm theo hướng dẫn đặt lại mật khẩu"
+      email_404: "Không tìm thấy địa chỉ email"
+      sent: "Email được gửi kèm theo hướng dẫn đặt lại mật khẩu"
+    edit:
+      new_pass: "Mật khẩu mới"
+      submit: "Xác nhận"
+    update:
+      success: "Mật khẩu đã được đặt lại."
+      password404: "Mật khẩu không thể để trống"
   user_mailer:
     account_activation:
       title: "Kích hoạt tài khoản"
@@ -45,6 +60,10 @@ vi:
       message: "Chào mừng đến với Sample_app! Click vào link dưới đây để kích hoạt tài khoản của bạn:"
       success: "Tài khoản đã được kích hoạt!"
       invalid: "Link kích hoạt không hợp lệ"
+    password_resets:
+      message: "Để đặt lại mật khẩu của bạn hãy nhấp vào liên kết bên dưới:"
+      message_2: "Liên kết này sẽ hết hạn sau hai giờ."
+      message_3: "Nếu bạn không yêu cầu đặt lại mật khẩu, hãy bỏ qua email này và mật khẩu của bạn sẽ không thay đổi."
   user:
     edit:
       title: "Sửa thông tin cá nhân"
@@ -64,3 +83,4 @@ vi:
         name: "Tên"
         email: "Địa chỉ email"
         password: "Mật Khẩu"
+        confirmation: "Xác nhận lại mật khẩu"
