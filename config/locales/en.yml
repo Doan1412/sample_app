@@ -64,6 +64,7 @@ en:
     new_user?: "New User ?"
     sign_up_now: "Sign Up Now"
     invalid: "Invalid email/password combination"
+    remember_me: "Remember me on this computer"
   activerecord:
     models:
       user: "User"
