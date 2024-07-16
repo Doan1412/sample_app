@@ -1,4 +1,5 @@
 vi:
+  hello: "Gửi"
   app_name: "sample_app"
   help:
     title: "Trợ giúp"
@@ -27,6 +28,7 @@ vi:
     welcome_msg: "Chào mừng bạn đến với Sample_app"
     the_form_contains: "Biển mẫu bao gồm"
     error: "lỗi"
+    check_mail: "Hãy kiểm tra email của bạn để kích hoạt tài khoản của bạn."
   login:
     title: "Đăng nhập"
     email: "Email"
@@ -35,6 +37,14 @@ vi:
     sign_up_now: "Đăng ký ngay"
     invalid: "Email hoặc mật khẩu không đúng"
     remember_me: "Nhớ tôi trên máy tính này"
+    unactivated: "Tài khoản chưa được kích hoạt. Kiểm tra email của bạn để lấy link kích hoạt."
+  user_mailer:
+    account_activation:
+      title: "Kích hoạt tài khoản"
+      account_activation: "Kích hoạt tài khoản"
+      message: "Chào mừng đến với Sample_app! Click vào link dưới đây để kích hoạt tài khoản của bạn:"
+      success: "Tài khoản đã được kích hoạt!"
+      invalid: "Link kích hoạt không hợp lệ"
   user:
     edit:
       title: "Sửa thông tin cá nhân"

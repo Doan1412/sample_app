@@ -8,3 +8,4 @@ image_url: "http://gravatar.com/emails"
 gravatar:
   size: 80
   list_size: 50
+mailer_from: "noreply@example.com"

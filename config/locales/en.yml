@@ -29,7 +29,7 @@
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
 en:
-  hello: "Hello world"
+  hello: "Dear"
   app_name: "sample_app"
   help:
     title: "Help"
@@ -58,6 +58,7 @@ en:
     the_form_contains: "The form contains"
     error: "error"
     confirmation: "Confirmation"
+    check_mail: "Please check your email to activate your account."
   login:
     title: "Login"
     email: "Email"
@@ -66,6 +67,14 @@ en:
     sign_up_now: "Sign Up Now"
     invalid: "Invalid email/password combination"
     remember_me: "Remember me on this computer"
+    unactivated: "Account not activated. Check your email for the activation link."
+  user_mailer:
+    account_activation:
+      title: "Account activation"
+      account_activation: "Account activation"
+      message: "Welcome to the Sample App! Click on the link below to activate your account:"
+      success: "Account activated!"
+      invalid: "Invalid activation link"
   user:
     edit:
       title: "Edit User"

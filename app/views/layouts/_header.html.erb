@@ -18,7 +18,7 @@
               <li><%= link_to t("navbar.profile"), current_user %></li>
               <li><%= link_to t("navbar.settings"), edit_user_path(current_user) %></li>
               <li class="divider"></li>
-              <li><%= link_to t("navbar.logout"), logout_path, data: { method: :delete } %></li>
+              <li><%= link_to t("navbar.logout"), logout_path, data: { "turbo-method": :delete } %></li>
             </ul>
           </li>
         <% else %>

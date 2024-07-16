@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, excpet: %i(show new create)
+  before_action :logged_in_user, except: %i(show new create)
   before_action :set_user, except: %i(index new create)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
@@ -17,9 +17,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t("welcome_msg")
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "sign_up.check_mail"
+      redirect_to root_url, status: :see_other
     else
       render :new, status: :unprocessable_entity
     end
