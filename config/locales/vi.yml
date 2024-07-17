@@ -1,14 +1,18 @@
 vi:
   hello: "Gửi"
   app_name: "sample_app"
+  base_title: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
   help:
     title: "Trợ giúp"
     content: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại"
     content_2: "trang trợ giúp Hướng dẫn Rails"
   home:
     title: "Trang chủ"
-    content: "Chào mừng đến với Sample_app! Đây là trang chủ của"
-    content_2: "Hướng dẫn Ruby on Rails"
+    content: "Đây là trang chủ của
+                      <a href=%{source}>Hướng dẫn Ruby on Rails</a>
+                      ứng dụng mẫu."
+    content_2: "Chào mừng đến với Ứng dụng Mẫu"
+    feed: "Bảng tin bài viết"
   navbar:
     home: "Trang chủ"
     help: "Trợ giúp"
@@ -75,12 +79,39 @@ vi:
     delete: 
       title: "Xóa"
       confirmation: "Bạn có chắc chắn muốn xóa user này không"
+    profile:
+      view_profile: "xem hồ sơ của tôi"
+      micropost:
+        one: "1 bài viết"
+        other: "%{count} bài viết"
+    update:
+      success: "Thông tin cá nhân đã được cập nhật."
+      fail: "Cập nhật thông tin cá nhân thất bại"
+  micropost:
+    show:
+      posted_ago: "Đăng %{time} trước."
+    create:
+      success: "Tạo bài viết thành công"
+      placeholder: "Viết bài mới..."
+      submit: "Đăng"
+      image_type: "Phải là một ảnh JPEG, GIF, hoặc PNG"
+      image_size: "Ảnh phải nhỏ hơn 5MB"
+      image_size_alert: "Kích thước tệp tối đa là 5MB. Vui lòng chọn tệp nhỏ hơn."
+    delete:
+      title: "Xóa"
+      confirmation: "Bạn có chắc chắn muốn xóa bài viết ?"
+    destroy:
+      success: "Bài viết đã được xóa."
+      fail: "Bài viết không thể xóa"
+      invalid: "Bài viết không hợp lệ"
   activerecord:
     models:
       user: "Người dùng"
+      micropost: "Bài viết"
     attributes:
       user:
         name: "Tên"
         email: "Địa chỉ email"
         password: "Mật Khẩu"
         confirmation: "Xác nhận lại mật khẩu"
+        user_not_found: "Không tìm thấy người dùng"

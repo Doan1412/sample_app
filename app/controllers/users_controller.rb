@@ -8,7 +8,9 @@ class UsersController < ApplicationController
     @pagy, @users = pagy User.all, items: Settings.users_per_page
   end
 
-  def show; end
+  def show
+    @page, @microposts = pagy @user.microposts, items: Settings.page_10
+  end
 
   def new
     @user = User.new
@@ -29,10 +31,10 @@ class UsersController < ApplicationController
 
   def update
     if @user.update user_params
-      flash[:success] = t "users.update.success"
+      flash[:success] = t "user.update.success"
       redirect_to @user
     else
-      flash.now[:danger] = t "users.update.failed"
+      flash.now[:danger] = t "user.update.failed"
       render :edit, status: :unprocessable_entity
     end
   end
@@ -57,14 +59,6 @@ class UsersController < ApplicationController
 
     flash[:danger] = t("users.not_found")
     redirect_to root_path
-  end
-
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t "users.error.please_log_in"
-    redirect_to login_path, status: :see_other
   end
 
   def correct_user

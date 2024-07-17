@@ -10,3 +10,8 @@ gravatar:
   list_size: 50
 mailer_from: "noreply@example.com"
 password_reset_expired: 2
+digit_140: 140
+digit_50: 50
+page_10: 10
+img_size: 5
+img_display_size: [500, 500]
