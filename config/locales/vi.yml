@@ -104,6 +104,12 @@ vi:
       success: "Bài viết đã được xóa."
       fail: "Bài viết không thể xóa"
       invalid: "Bài viết không hợp lệ"
+  follow:
+    follow: "Theo dõi"
+    unfollow: "Bỏ theo dõi"
+    followings: "Đang theo dõi"
+    followers: "Người theo dõi"
+    relationship_404: "Không tìm thấy mối quan hệ"
   activerecord:
     models:
       user: "Người dùng"
