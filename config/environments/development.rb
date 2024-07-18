@@ -40,7 +40,7 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.default_url_options = {host: ENV["host"]}
-
+  
   # SMTP settings for gmail
   config.action_mailer.smtp_settings = {
     address: ENV["mail_address"],
@@ -70,6 +70,8 @@ Rails.application.configure do
 
   # Suppress logger output for asset requests.
   config.assets.quiet = true
+
+  config.middleware.use I18n::JS::Middleware
 
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true

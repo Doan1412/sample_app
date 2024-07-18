@@ -15,7 +15,13 @@ class User < ApplicationRecord
   before_save :downcase_email
   before_create :create_activation_digest
 
+  has_many :microposts, dependent: :destroy
+
   has_secure_password
+
+  def feed
+    microposts
+  end
 
   def create_reset_digest
     self.reset_token = User.new_token

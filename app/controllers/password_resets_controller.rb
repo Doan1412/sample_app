@@ -47,7 +47,7 @@ class PasswordResetsController < ApplicationController
     @user = User.find_by email: params[:email]
     return if @user
 
-    flash[:danger] = t "password_resets.edit.user_not_found"
+    flash[:danger] = t "activerecord.models.attributes.user.user_not_found"
     redirect_to root_url
   end
 
